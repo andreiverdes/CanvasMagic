@@ -28,7 +28,6 @@ public class ClipPathRoundedCornersDrawable extends Drawable {
         mPath.addRoundRect(rect, 30f, 30f, Path.Direction.CW);
         canvas.clipPath(mPath);
         canvas.drawBitmap(mBitmap, 0, 0, null);
-        canvas.restore();
     }
 
     @Override public void setAlpha(int alpha) {
